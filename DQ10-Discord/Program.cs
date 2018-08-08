@@ -9,6 +9,7 @@ using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using Discord;
+//using static DQ10_Discord.Weapon;
 
 namespace DQ10_Discord
 {
@@ -19,10 +20,12 @@ namespace DQ10_Discord
         public static CommandService commands;
         public static IServiceProvider services;
 
+
+
         public static Dictionary<int, string> Monster = new Dictionary<int, string>()
         {
             {0, "スライム"},
-            {1, "ドラキー"},
+            {1, "スライムベス"},
         };
 
         static void Main(string[] args) => new Program().MainAsync().GetAwaiter().GetResult();
@@ -63,22 +66,19 @@ namespace DQ10_Discord
 
             var context = new CommandContext(client, message);
 
-            int argPos = 0;
-
             foreach (string Value in Monster.Values)
             {
                 if (Value == message.Content)
                 {
 
-
-                        mes = message.Content;
-                        status.MonsterStatus();
-                        await message.Channel.SendMessageAsync(status.mes2);
-                    }
+                    mes = message.Content;
+                    Status.MonsterStatus();
+                    await message.Channel.SendMessageAsync(Status.mes2);
+                    
                 }
             }
 
-
+        }
 
         /// <summary>
         /// コンソール表示処理
@@ -90,5 +90,8 @@ namespace DQ10_Discord
             Console.WriteLine(msg.ToString());
             return Task.CompletedTask;
         }
+
+
+
     }
 }
