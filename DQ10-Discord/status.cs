@@ -33,9 +33,17 @@ namespace DQ10_Discord
                 mes2 += "\n装備\n"+ Weapon.Sword[1] + "\n白木のおうぎ\n皮の盾\n前座芸人の服\n前座芸人のながぐつ\n";
                 mes2 += "\n宝珠\nなし\n";
                 mes2 += "\n出現場所";
-                mes2 += "\n" + Area.Orgreede[1] + " プクレット地方 アクロニア鉱山 ラニアッカ断層帯";
-                mes2 += "\nツスクル平野 コルット地方 育みの大地[偽] 真の育みの大地 サザミレ草原 \n";
-                mes2 += "エテーネ王国領 辺境の雪山" + grave;
+                mes2 += "\n" + Area.Orgreede[1];
+                mes2 += "\n" + Area.Eltona[1];
+                mes2 += "\n" + Area.Dwachakka[1];
+                mes2 += "\n" + Area.Dwachakka[2];
+                mes2 += "\n" + Area.Pukland[1];
+                mes2 += "\n" + Area.Wenna[1];
+                mes2 += "\n" + "育みの大地[偽]";
+                mes2 += "\n" + "育みの大地[真]";
+                mes2 += "\n" + "サザミレ草原";
+                mes2 += "\n" + "エテーネ王国領";
+                mes2 += "\n" + "辺境の雪山" + grave;
 
             }
             if (Program.mes == "スライムベス")
