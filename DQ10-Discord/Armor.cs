@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DQ10_Discord
 {
-    class Aromor
+    class Armor
     {
 
         public static Dictionary<int, string> Head = new Dictionary<int, string>()
