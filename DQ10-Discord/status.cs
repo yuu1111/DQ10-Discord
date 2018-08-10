@@ -40,7 +40,7 @@ namespace DQ10_Discord
                 mes2 += "\n" +"ATK:" + ATK;
                 mes2 += "\n" +"DEF:" + DEF;
                 mes2 += "\n" +"重さ:" + Weght;
-                mes2 += "\n\n" + "ドロップアイテム:";
+                mes2 += "\n\n" + "ドロップアイテム";
 
                 mes2 += "\n\n" + "装備";
                 mes2 += "\n" + Sword[1];
